@@ -25,3 +25,24 @@ def parametroPadrao (nome="sem nome"):
     print("Bem-vindo!",nome)
 parametroPadrao("Ana")
 parametroPadrao()
+#Passando LISTA por parametro
+def parametroLista(lista):
+    for i in lista:
+        print(i)
+minhaLista = ["Ana Carolina","Machado"]
+parametroLista(minhaLista)
+#Parametro vazio, só passa reto por ele
+def funcaoVazia():
+    pass
+#Função com retorno
+def funcRetorno(nome):
+    if nome=="Ana":
+        return True
+    else:
+        return False
+recebeRetorno=funcRetorno("Ana")#Se mudar o nome aqui, a função se torna falsa!
+if recebeRetorno==True:
+    print("Okay")
+else:
+    print("Não é.")
+    
